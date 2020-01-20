@@ -1,0 +1,23 @@
+@import './variables';
+@import './typeography';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $font-color;
+  background: $bg-color;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 3em;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1em;
+}

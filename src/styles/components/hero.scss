@@ -1,0 +1,28 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Montserrat', sans-serif;
+
+  .name {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .title {
+    font-size: 20px;
+    height: 40px;
+
+    span {
+      display: inline-block;
+      overflow: hidden;
+
+      &:last-child {
+        margin-left: 0.25em;
+      }
+    }
+  }
+}
