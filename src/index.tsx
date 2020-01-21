@@ -31,8 +31,8 @@ export const Index = hot(module)(() => (
           company="Volantio"
           title="Senior Software Engineer"
           description={
-            'Worked with a fantastic team to implement a class-leading revenue optimization ' +
-            'platform for the airline industry. Contributed to key components of a ' +
+            'Currently working with a fantastic team to implement a class-leading revenue ' +
+            'optimization platform for the airline industry. Built key components of a ' +
             'platform capable of integrating with many exgternal data sources and APIs. ' +
             'Worked to implement multiple well-tested, internatiionalized, and accessible ' +
             'client applications. Researched and implemented a global network of Kubernetes ' +
@@ -49,14 +49,14 @@ export const Index = hot(module)(() => (
             'used by multiple hotels accross the United States.'
           }
           startYear={2013}
-          endYear={2016}
+          endYear={2015}
         />
         <Position
           company="University of Arizona"
           title="Teaching Assistant"
           description={
-            'Assisted with lesson planning and grading of CS337 Web Applications. Held office' +
-            ' hours and assisted students.'
+            'Assisted with lesson planning and grading of CS337 Web Applications. Held office ' +
+            'hours and assisted students.'
           }
           startYear={2013}
         />
@@ -84,15 +84,15 @@ export const Index = hot(module)(() => (
         <Project
           name="weather-app"
           description={
-            'A simple weather application built to showcase a simple design using react,' +
-            ' recharts, and react-spring.'
+            'A simple weather application built to showcase a simple design using react, ' +
+            'recharts, and react-spring.'
           }
           gitHubURL="https://github.com/hwstovall/weather-app"
         />
         <Project
           name="react-canvas"
           description={
-            'A simple library that allows management of HTML canvas drawables using the' +
+            'A simple library that allows management of HTML canvas drawables using the ' +
             'react virtual DOM.'
           }
           gitHubURL="https://github.com/hwstovall/react-canvas"
