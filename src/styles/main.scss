@@ -8,16 +8,21 @@
 }
 
 body {
-  color: $font-color;
-  background: $bg-color;
+  color: var(--text-color-normal);
+  background: var(--background-color);
 }
 
 main {
-  max-width: 960px;
+  max-width: $max-width;
   margin: 0 auto;
   padding: 0 3em;
 }
 
-p:not(:last-child) {
-  margin-bottom: 1em;
+p {
+  margin: calc(1em + .5vw) 0;
+  line-height: calc(1.5em + .2vw);
+}
+
+.text-italic {
+  font-style: italic;
 }

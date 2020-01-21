@@ -1,35 +1,16 @@
-import path from 'path'
-import express from 'express';
 import webpack from 'webpack';
-import webpackDevServer from 'webpack-dev-server';
 
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: webpack.Configuration = {
   mode: 'development',
-  entry: ['react-hot-loader/patch', './src/entry.tsx'],
+  entry: ['./src/entry.tsx'],
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.scss', '.css'],
-    alias: {
-      'react-dom': '@hot-loader/react-dom',
-    },
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname,
     filename: 'bundle.js',
-    publicPath: '/',
-  },
-  devtool: 'eval',
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    host: 'personal-site.local',
-    port: 9000,
-    publicPath: '/',
-    historyApiFallback: true,
-    hot: true,
-    before: (app) => {
-       app.use('/assets', express.static('./assets'));
-    }
   },
   module: {
     rules: [

@@ -1,17 +1,21 @@
 import * as React from 'react';
 
+import '../styles/components/project.scss';
+
 interface ProjectProps {
   readonly name: string;
   readonly description: string;
   readonly gitHubURL: string;
-  readonly liveURL?: string;
 }
 
-export const Project = ({name, description, gitHubURL, liveURL}: ProjectProps) => (
+export const Project = ({ name, description, gitHubURL }: ProjectProps) => (
   <section className="project">
-    <h3>{name}</h3>
+    <div className="name-and-link">
+      <h3>{name}</h3>
+      <a href={gitHubURL}>View Project</a>
+    </div>
     <div className="description">
-      {description}
+      <p>{description}</p>
     </div>
   </section>
 );

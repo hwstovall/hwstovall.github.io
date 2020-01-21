@@ -1,2 +1,11 @@
-$bg-color: #181723;
-$font-color: #e2e2ff;
+:root {
+  --background-color: #e2e2ff;
+  --text-color-normal: #181723;
+
+  @media (prefers-color-scheme: dark) {
+    --background-color: #181723;
+    --text-color-normal: #e2e2ff;
+  }
+}
+
+$max-width: 660px;

@@ -1,0 +1,44 @@
+@import '../variables.scss';
+
+.position {
+  .basic-information {
+    margin-bottom: 1em;
+
+    @media screen and (min-width: $max-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .title-and-company {
+    margin-bottom: 0.5em;
+
+    span {
+      display: block;
+
+      @media screen and (min-width: $max-width) {
+        display: inline;
+      }
+    }
+
+    .divider {
+      display: none;
+
+      @media screen and (min-width: $max-width) {
+        display: inline;
+      }
+    }
+
+    @media screen and (min-width: $max-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    font-weight: normal;
+  }
+
+  .tenure {
+    font-style: italic;
+  }
+}

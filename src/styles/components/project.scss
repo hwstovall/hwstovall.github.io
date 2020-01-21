@@ -1,0 +1,14 @@
+@import '../variables.scss';
+
+.project {
+  .name-and-link {
+    @media screen and (min-width: $max-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  a {
+    color: var(--text-color-normal);
+  }
+}

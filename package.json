@@ -7,6 +7,7 @@
   "license": "None",
   "scripts": {
     "develop": "better-npm-run develop",
+    "build": "better-npm-run build",
     "storybook": "start-storybook"
   },
   "betterScripts": {
@@ -14,6 +15,13 @@
       "command": "webpack-dev-server --config webpack.config.dev.ts",
       "env": {
         "NODE_ENV": "development",
+        "TS_NODE_PROJECT": "tsconfig.webpack.json"
+      }
+    },
+    "build": {
+      "command": "webpack --config webpack.config.ts",
+      "env": {
+        "NODE_ENV": "production",
         "TS_NODE_PROJECT": "tsconfig.webpack.json"
       }
     }
@@ -38,6 +46,7 @@
     "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.1",
+    "postcss-custom-properties": "^9.0.2",
     "postcss-loader": "^3.0.0",
     "react-hot-loader": "^4.12.18",
     "sass-loader": "^8.0.2",

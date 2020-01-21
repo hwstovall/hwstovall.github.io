@@ -28,9 +28,9 @@ export const Hero = () => {
   const titleTrailRef = React.useRef();
   const titleTrail = useTrail(title.length, {
     config,
-    height: 40,
+    translateY: 0,
     opacity: 1,
-    from: { height: 0, opacity: 0 },
+    from: { translateY: 100, opacity: 0 },
     ref: titleTrailRef,
   });
   useChain([firstTrailRef, lastTrailRef, titleTrailRef], [0, 0.25, 1]);
@@ -50,14 +50,20 @@ export const Hero = () => {
             ))}
           </h1>
         </div>
-        <div className="title">
-          <h2>
-            {titleTrail.map((props, i) => (
-              <animated.span key={i} style={props}>{title[i]}</animated.span>
-            ))}
-          </h2>
-        </div>
+        <h2 className="title">
+          {titleTrail.map(({ opacity, translateY }, i) => (
+            <animated.span
+              key={i}
+              style={{
+                opacity,
+                transform: translateY.interpolate((t) => `translateY(${t}%)`),
+              }}
+            >
+              {title[i]}
+            </animated.span>
+          ))}
+        </h2>
       </div>
-    </section>
+    </section >
   );
 };
