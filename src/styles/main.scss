@@ -15,7 +15,11 @@ body {
 main {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 3em;
+  padding: 0 calc(1.5em + .5vw);
+
+  @media screen and (min-width: $max-width) {
+    padding: 0 3em;
+  }
 }
 
 p {

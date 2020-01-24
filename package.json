@@ -7,7 +7,8 @@
   "license": "None",
   "scripts": {
     "develop": "better-npm-run develop",
-    "build": "better-npm-run build",
+    "clean": "rm -f bundle.*.js && rm -f index.html",
+    "build": "yarn clean && better-npm-run build",
     "storybook": "start-storybook"
   },
   "betterScripts": {
@@ -19,7 +20,7 @@
       }
     },
     "build": {
-      "command": "webpack --config webpack.config.ts",
+      "command": "webpack --config webpack.config.prod.ts",
       "env": {
         "NODE_ENV": "production",
         "TS_NODE_PROJECT": "tsconfig.webpack.json"
