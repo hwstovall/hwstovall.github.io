@@ -28,10 +28,20 @@ export const Index = hot(module)(() => (
 
       <PageSection title="Experience">
         <Position
+          company="Carvana"
+          title="Senior Engineer I"
+          description={
+            'Helping build the new way to buy a car. Working on key frontend ' + 
+            'components and helping develop internal tools.'
+          }
+          startYear={2020}
+          current={true}
+        />
+        <Position
           company="Volantio"
           title="Senior Software Engineer"
           description={
-            'Currently working with a fantastic team to implement a class-leading revenue ' +
+            'Worked with a fantastic team to implement a class-leading revenue ' +
             'optimization platform for the airline industry. Built key components of a ' +
             'platform capable of integrating with many exgternal data sources and APIs. ' +
             'Worked to implement multiple well-tested, internatiionalized, and accessible ' +
@@ -39,7 +49,7 @@ export const Index = hot(module)(() => (
             'clusters with high availability and high fault-tolerance.'
           }
           startYear={2016}
-          current={true}
+          endYear={2020}
         />
         <Position
           company="Tuch"
