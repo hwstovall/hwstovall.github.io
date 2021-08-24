@@ -1,14 +1,12 @@
 import * as React from 'react';
+import { hot } from 'react-hot-loader';
+import { Education } from './components/education';
+import { Hero } from './components/hero';
+import { PageSection } from './components/page-section';
+import { Position } from './components/position';
+import { Project } from './components/project';
 
 import './styles/main.scss';
-
-import { hot } from 'react-hot-loader';
-
-import { PageSection } from './components/page-section';
-import { Hero } from './components/hero';
-import { Project } from './components/project';
-import { Position } from './components/position';
-import { Education } from './components/education';
 
 export const Index = hot(module)(() => (
   <React.Fragment>
@@ -16,26 +14,37 @@ export const Index = hot(module)(() => (
     <main>
       <PageSection title="About">
         <p>
-          I'm an Atlanta based Software Engineer working in the travel industry. I like to find
-          elegant ways to leverage technology to solve problems. I find teaching programming 
-          skills to others to be an exciting challenge.
+          I am someone who is passionate about people and code. There is always an elegant 
+          solution out there if you are willing to fully understand the problem. Recently
+          I have been working to empower others in their careers both in my job and my
+          volunteer work.
         </p>
         <p>
-          While I currently work on a stack using Kubernetes, Python + Django, TypeScript, and
-          React, I am always learning new technologies.
+          While I currently work on a stack using Node, GraphQL, TypeScript, and
+          React, I am always learning new technologies at work and on personal projects.
         </p>
       </PageSection>
 
       <PageSection title="Experience">
         <Position
           company="Carvana"
+          title="Engineering Team Lead"
+          description={
+            'Building a fantastic team and equipping them to solve the challenges facing a ' +
+            'rapidly growing organization.'
+          }
+          startYear={2021}
+          current={true}
+        />
+        <Position
+          company="Carvana"
           title="Senior Engineer I"
           description={
-            'Helping build the new way to buy a car. Working on key frontend ' + 
-            'components and helping develop internal tools.'
+            'Helping build the new way to buy a car. Working on key frontend ' +
+            'components and helping develop modern replacements for internal tools.'
           }
           startYear={2020}
-          current={true}
+          endYear={2021}
         />
         <Position
           company="Volantio"
@@ -43,8 +52,8 @@ export const Index = hot(module)(() => (
           description={
             'Worked with a fantastic team to implement a class-leading revenue ' +
             'optimization platform for the airline industry. Built key components of a ' +
-            'platform capable of integrating with many exgternal data sources and APIs. ' +
-            'Worked to implement multiple well-tested, internatiionalized, and accessible ' +
+            'platform capable of integrating with many external data sources and APIs. ' +
+            'Worked to implement multiple well-tested, internationalized, and accessible ' +
             'client applications. Researched and implemented a global network of Kubernetes ' +
             'clusters with high availability and high fault-tolerance.'
           }
@@ -56,7 +65,7 @@ export const Index = hot(module)(() => (
           title="Web Developer"
           description={
             'Led implementation of an administration application for tablet menu systems ' +
-            'used by multiple hotels accross the United States.'
+            'used by multiple hotels across the United States.'
           }
           startYear={2013}
           endYear={2015}
@@ -87,7 +96,7 @@ export const Index = hot(module)(() => (
           name="guage-cluster"
           description={
             'I had been wanting to learn Qt for a while so I decided to try and replicate ' +
-            'the Porsche Taycan\'s guage cluster in QML.'
+            'the Porsche Taycan\'s gauge cluster in QML.'
           }
           gitHubURL="https://github.com/hwstovall/gauge-cluster"
         />
