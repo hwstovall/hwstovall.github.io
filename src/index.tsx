@@ -19,29 +19,25 @@ export const Index = hot(module)(() => (
           I have been working to empower others in their careers both in my job and my
           volunteer work.
         </p>
-        <p>
-          While I currently work on a stack using Node, GraphQL, TypeScript, and
-          React, I am always learning new technologies at work and on personal projects.
-        </p>
       </PageSection>
 
       <PageSection title="Experience">
         <Position
-          company="Carvana"
-          title="Engineering Team Lead"
+          company="Greenlight"
+          title="Senior Engineer Team Lead"
           description={
-            'Building a fantastic team and equipping them to solve the challenges facing a ' +
-            'rapidly growing organization.'
+            'Led a team to design, build, and launch Greenlight\'s first credit offering. ' +
+            'Working to modernize and enhance code quality as well as improving scalability.'
           }
           startYear={2021}
           current={true}
         />
         <Position
           company="Carvana"
-          title="Senior Engineer I"
+          title="Senior Engineer I - Engineering Team Lead"
           description={
-            'Helping build the new way to buy a car. Working on key frontend ' +
-            'components and helping develop modern replacements for internal tools.'
+            'Built a fantastic team and equipped them to build and implement both internal ' +
+            'and customer-facing applications that drove e-commerce publishing and purchasing.'
           }
           startYear={2020}
           endYear={2021}
